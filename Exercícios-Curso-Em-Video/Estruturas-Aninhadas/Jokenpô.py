@@ -1,4 +1,5 @@
-import random
+from random import choice
+from time import sleep
 
 # Lista de opções do jogador e do bot.
 # A lista do bot é maior para ter menos chances de empate
@@ -32,12 +33,18 @@ while pontosUsuario <= 3 or pontosBot <= 3:
     # Escolha do jogador.
     # Com base no número escolhido será selecionada um dos elementos da lista de opções.
     numeroEscolhido = int(input("Qual opção? : "))
+    print("Jo")
+    sleep(0.5)
+    print("Ken")
+    sleep(0.5)
+    print("Pô!!!")
+    sleep(0.5)
     escolhaUsuario = listaDeOpcoes[numeroEscolhido]
     print()
 
     # Escolha do bot.
     # É feito de forma aleatória com base na lista de opções.
-    escolhaBot = random.choice(listaDeOpcoes)
+    escolhaBot = choice(listaDeOpcoes)
 
     # Lista da jogada.
     # Armazena numa lista as escolhas do bot e do jogador.
